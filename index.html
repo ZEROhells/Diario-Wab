@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotações</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="light-theme">
+
+    <div>
+        <button class="btn_theme">Dark</button>
+    </div>
+
+    <!--exneplo de ID-->>
+    <div id="titleOne">
+        <H1>Minhas Anotações</H1>
+        <br>
+        <p id="msg">Funções da pagina:</p>
+        <ul>
+            <li class="list">Armazenar informações</li>
+            <li class="list">Guia de funcionalidades das tags</li>
+            <li class="list">Temas Dark e light</li>
+        </ul>
+    </div>
+    <br>
+
+    <div class="box">
+        <H2><span class="bold">Negrito</span>, <span class="italic">Italico</span> e <span
+                class="wanderline">Sublinhado</span></H2>
+        <br>
+        <p>O <b>Negrito</b> é representado pela tag: <b>(b)</b> de Bold</p>
+        <p>O <i>Italico</i> é representado pela tag: <b>(i)</b> de italic</p>
+        <p>O <u>Sublinhado</u> é representado pela tag: <b>(u)</b> de Underline</p>
+    </div>
+    <br>
+
+    <div class="box">
+        <H2>Adereções é funcionalidades</H2>
+        <br>
+        <p>A quebra de linha é Representada pela tag: <b>(br)</b></p>
+        <br>
+        <p>A linha horizontal é representada pela tag: <b>(hr)</b></p>
+        <br>
+        <p>Para que o texto seja exibido exatamente como foi escrito no paragrafo (respeitando seus espações e quebras
+            de linha sem tags), é utilizado a tag <b>(pre)</b> antes do <b>(p)</b> que representa o paragrafo. Exemplo:
+        </p>
+        <pre>
+        <p>   C          Dm
+            Se eu pudesse ser assim
+            Em               Fm
+            Só metade do que pensa de mim
+                     C               A
+            Qualquer coisa poderia fazer
+                     D       G
+            Até aprender a amar</p>
+    </pre>
+    </div>
+    <br>
+
+    <div class="box">
+        <H2>Listas</H2>
+        <br>
+        <p>Para criar uma lista <b>Ordenada</b> usamos duas tag, <b>(OL)</b> ou <b>(uL)</b> que abre e fecha o tipo de
+            lista e <B>(LI)</B> que abre cada item da lista. Exemplo:</p>
+        <br>
+        <p>Lista utilizando <b>(ol) (li)</b>ordenada</p>
+        <ol>
+            <li>Clite no menu iniciar</li>
+            <li>selecione "reiniciar" e confirme</li>
+        </ol>
+        <br>
+        <p>Lista utilizando <b>(ul) (li)</b> . Não ordenada</p>
+        <ul>
+            <li>Clite no menu iniciar</li>
+            <li>selecione "reiniciar" e confirme</li>
+        </ul>
+        <br>
+        <p>Listas intercaladas</p>
+        <ol>
+            <li>Munitor mx32</li>
+            <ul>
+                <li>22'5 polegas</li>
+                <li>1980p</li>
+            </ul>
+            <li>Munitor mx72</li>
+            <ul>
+                <li>32 polegas</li>
+                <li>3080p</li>
+            </ul>
+            <li>Munitor mx122</li>
+            <ul>
+                <li>47 polegas</li>
+                <li>7980p</li>
+            </ul>
+        </ol>
+        <br>
+        <p>o tributo <b>"type"</b> muda o tipo de marcador da lista, para Ordenada os marcadores são <b>type="A",
+                type="a", type="I" e type="i".</b> As listas não ordenadas usa se <b>type="disc", type="circle" e
+                type="square"</b></p>
+    </div>
+    <br>
+
+    <div class="box">
+        <H2>Imagens</H2>
+        <br>
+
+        <p>A tag utilizada prar inserir imagens é a <b>img</b> com ela podemos atribuir qualquer formato de imagem
+            atraves do atributo <b>SRC</b> informando o caminho da imagem. Exemplo: <b>Cimg
+                src="img/nome_da_imagem.pnj">C/img>.</b>Com o css usamos o id mais o float e podemos alterar a posição da imagens.
+            Exemplo:</p>
+        <br>
+
+        <div id="imgTop">
+            <img class="img_align_test" src="img/circulo.png">
+        </div>
+        <p>Alinhamento ao topo:</p>
+        <br>
+
+        <p>Alinhamento ao Botton:</p>
+        <div id="imgBotton">
+            <img class="img_align_test" src="img/circulo.png">
+        </div>
+        <br>
+
+        <div id="imgLeft">
+            <img class="img_align_test" src="img/circulo.png">
+        </div>
+        <p>Alinhamento ao Left:</p>
+        <br>
+
+        <div id="imgRight">
+            <img class="img_align_test" src="img/circulo.png">
+        </div>
+        <p>Alinhamento ao right:</p>
+        <br>
+    </div>
+    <br>
+
+    <div class="box">
+        <H2>Links</H2>
+        <br>
+        <p>Para Utilizar links usase a tag a tag <b>(a)</b>de ãncora. Exemplo: <b>ca href="url">Texto descritivoc/a></b>
+        </p>
+        <br>
+        <p>Posso deixar como exemplo <a href="https://www.instagram.com/vinicius_zero_/" target="_blank">Meu instagran
+                ;)</a> ou <a href="Vinicius:viniciusop23@gmail.com">Meu Email ;p</a></p>
+        <br>
+        <p>Tambem é possivel localizar um texto dentro da pagina usando a tag <b>(a).</b> Exemplo:</p>
+        <br>
+        <p><a href="#Capítulo I">O que é HTML?</a><br></p>
+        <p><a href="#Capítulo II">Principais comandos</a></p>
+        <br>
+        <a name="Capítulo I">
+            <h3>O que é HTML?</h3>
+            <p>HTML é uma das linguagens de marcação mais conhecidas e utiliza um formato simples de código, que pode
+                ser gerado sem a ajuda de aplicativos especiais.</P>
+            <p>Para criar um documento HTML, tudo o que você precisa é de um editor de texto ASCII como o NotePad (Bloco
+                de Notas), por exemplo. Se você precisar verificar a formatação do documento durante a criação, pode
+                usar qualquer navegador, pois todos eles são capazes de interpretar o código.</p>
+        </a>
+        <a name="Capítulo II">
+            <h3>Principais comandos</h3>
+            <p>Os comandos são inseridos no código entre os sinais de menor que "<" e maior que ">" e são chamados de
+                    <i>tags</i>.</p>
+        </a>
+        <ol>
+            <li><a href="#Exerc1">Reveja o exercício 1</a></li><br>
+            <li><a href="#Exerc2">Reveja o exercício 2</a></li><br>
+            <li><a href="#Exerc3">Reveja o exercício 3</a></li><br>
+        </ol>
+        <a NAME="Exerc1">
+            <h3>Exercício 1</h3>
+        </a>
+        <a NAME="Exerc2">
+            <h3>Exercício 2</h3>
+        </a>
+        <a NAME="Exerc3">
+            <h3>Exercício 3</h3>
+        </a>
+        <br>
+        <p>Para inserir links em imagens combinamos a tag <b>(a)</b> com a tag <b>img</b>, dessa forma: <b>'<'a
+                    href="url">'<'img src="img_uri">'<' /a></b>. Exemplo:</p3>
+        <p><a href="https://www.youtube.com/@ZeroOni" target="_blank"><img src="img/retangulo.png" alt="youtube"></a>
+        </p>
+        <br>
+        <ul>
+            <li><a href="https://www.instagram.com/vinicius_zero_/" target="_blank"><img
+                        src="img/circulo.png">Produtos</A><BR>
+            <li><a href="https://www.instagram.com/vinicius_zero_/" target="_blank"><img
+                        src="img/circulo.png">Serviços</A><BR>
+            <li><a href="https://www.instagram.com/vinicius_zero_/" target="_blank"><img
+                        src="img/circulo.png">Contato</A><BR>
+        </ul>
+        <p>Jogos de Ação:</p>
+        <ul>
+            <li><a href="index.html" class="acao">Pacman</a></li>
+            <li><a href="index.html" class="acao">Tetris</a></li>
+            <li><a href="index.html" class="acao">Snake</a></li>
+        </ul>
+        <p>Jogos de Estratégia:</p>
+        <ul>
+            <li><a href="index.html" class="estrategia">Xadrez</a></li>
+            <li><a href="index.html" class="estrategia">Dominó</a></li>
+            <li><a href="index.html" class="estrategia">Damas</a></li>
+        </ul>
+    </div>
+    <br>
+
+    <div class="box">
+        <H2>Tabelas</H2>
+        <br>
+        <p>A tag utilizada para criar tabelas é a <b>table</b>, dentro dela e necessario usar a tag <b>td</b> para
+            criação de células e <b>tr</b> para a c riação de linhas. Exemplo:</p>
+        <table> <!-- border="2" bgcolor"black" background="img/bg1.jpg" -->
+            <tr>
+                <td>Clientes cadastrados</td>
+            </tr>
+            <tr>
+                <td> Nome </td>
+                <td> Sobrenome </td>
+                <td> Idade </td>
+            <tr>
+                <td> Anna </td>
+                <td> Santos </td>
+                <td> 19 </td>
+            <tr>
+                <td> Vanessa </td>
+                <td> Medeiros </td>
+                <td> 21 </td>
+        </table>
+    </div>
+    <br>
+
+    <div class="box">
+        <H2>Codigos comentados</H2>
+        <br>
+        <p>Para comentar uma anotação dentro do codigo basta usar a tag <b>(c!-- -->)</b></p>
+        <br>
+    </div>
+    <br>
+
+    <div class="box">
+        <H2>Formulários</H2>
+        <br>
+        <p>Formularios simples utilizando a tag <b>input</b> em seu atributo <b>type=""</b> informamos o tipo de de
+            valor de entra, no <b>name=""</b> expecificamos o nome da variavel que vai armazenar esse dado, em
+            <b>size=""</b> especificamos o tamanho do campo em numeros de caractere, por fim <b>maxlenght=""</b> que
+            representa o numero maximo de caracteres digirados pelo usuario. Exemplo:</p>
+        <form ACTION="email@email.com" METHOD="get">
+            <ul type="none">
+                <li>Nome: <input type="text" placeholder="Ex: ana" name="name"></li> <br>
+                <li>Email: <input type="email" placeholder="Ex: ana@gmail.com" name="email"></li>
+                <li>Nº do cartão de crédito: <input type="caracteres" placeholder="Ex: 5555 5225 2555 3535"
+                        name="card_number"></li>
+                <li>Senha: <input type="password" placeholder="Ex: 123456" name="password"></li>
+                <li>Selecione a bandeira do cartão de crédito: <br>
+                    <input type="radio" checked="" name="selecao_cartao">--------VISA--------<br>
+                    <input type="radio" checked="" name="selecao_cartao">-MASTERCARD-
+                </li>
+                <li>Estado: <input type="text" placeholder="Ex: Rj" name="city"></li>
+                <li>Endereço: <input type="text" placeholder="Ex: Nova Iguaçu, rua HL, 696" name="Endereco"></li>
+                <li>Referência: <br><textarea rows="4" cols="40" placeholder="Ex: Centro" name="reference"></textarea>
+                <li>Selecione o melhor horario para entrega: <br>
+                    <input type="checkbox" name="time_send_1">08h ás 12h<br>
+                    <input type="checkbox" name="time_send_2">13h ás 15h<br>
+                    <input type="checkbox" name="time_send_3">16h ás 18h
+                </li>
+                <li>
+                    <input type="submit" value="Enviar" name="send">
+                    <input type="reset" value="Limpar campos" name="reset">
+                </li>
+                <input type=hidden name="cpf" value="verdadeiro">
+                <!--não sei a finalidade de um input "hidden", ~~anotação~~-->
+            </ul>
+        </form>
+        <br>
+        <h3>Listas de opições</h3>
+        <p>Listas de opições são bem comuns em formularios, para criar uma lista em uma caixa ou em um meno usamos a tag
+            <b>select</b> Exemplo: </p>
+        <!--Modelo base: <select multiple name="nome da lista">
+        <select multiple name="nome da lista"> -->
+        <form>
+            <ul type="none">
+                <li>
+                    <p>Lista de opições</p><br>
+                    <select NAME="cidades" SIZE="4">
+                        <option>Londres
+                        <option>Paris
+                        <option>Roma
+                        <option>Madri
+                    </select>
+                </li> <br>
+
+                <li>
+                    <p>Menu de opições</p> <br>
+                    <select NAME="cidades">
+                        <option>Londres
+                        <option>Paris
+                        <option>Roma
+                        <option>Madri
+                    </select>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <br>
+
+    <div class="box">
+        <H2>Frames (depreciada)</H2>
+        <br>
+        <p>Para criação de frames usa se a tag <b>frameset</b>, ele é utilizado como a tag <b>body</b> em questão de
+            preenchimento, pode ser definido seu tamanho a partir dos atributos <b>cols e rows</b> que representam a
+            largura e a autura do frame. Exemplo: <b>cframe cols="25%", *,25%"></frame></b> (o * representa o tamanho
+            que falta para completar a tela, no caso 50%)</p>
+        <!--depreciada
+    <frameset cols="25%.*,25%"> 
+        <frame src="frames/frame_a.html">
+        <frame src="frames/frame_b.htlm">
+        <frame src="frames/frame_c.htlm">
+    </frameset>
+        -->
+        <p>Os atributos da tag <b>frame</b> são <b>src="url", marginwidth="margin largura", marginheight="margin
+                altura", scrolling="add uma barra de rolagen ao frame" e noresize="inpede que o user redirecione o
+                frame"</b> </p>
+    </div>
+    <br>
+
+    <div class="box">
+        <H2>Palavra Chave (Meta)</H2>
+        <br>
+        <p>As palavras chaves não sao exibitas para o usuario final, elas descrevem as definições da pagina e ajudam na
+            divulgação, ela é representada pela tag <b>meta</b> e deve ser inserida na <b>head</b> da pagina. Exemplo:
+        </p>
+        <p>Seu valor depende do valor dos atributos <b>name=""</b> ou <b>http-equiv=""</b> </p>
+        <br>
+        <ol type="none">
+            <p> Os atributos do valor <b>nome</b> são:</p>
+            <li><b>author:</b> autor do documento</li>
+            <li><b>descriotion:</b> descreve o documento</li>
+            <li><b>keywords:</b> palavra chave que descreve o documento</li>
+            <li><b>generator:</b> define o programa utilizado para gerar o documento</li>
+            <li><b>robots:</b> tags para facilitar a busca pelos sistemas de busca</li>
+            <li><b>copyright:</b> direitos autorais</li>
+        </ol>
+        <br>
+        <ol type="none">
+            <li><b>content type:</b> define o tipo do documento (html/text)</li>
+            <li><b>expires:</b> define o tempo que o documento será obsoleto</li>
+            <li><b>refresh:</b> define o tempo de recarga da pagina</li>
+            <li><b>set-cookie:</b> define o valor de um cookie</li>
+        </ol>
+    </div>
+    <br>
+    <!--
+    <br>
+    <hr>
+    <H2>Titulo</H2>
+    <br>
+    <p>texto</p>
+    <br> 
+    -->
+
+
+    <script src="app.js"></script>
+    <noscript>JavaScript desativado! Ele é necessario para a visualização completa do site.</noscript>
+</body>
+
+</html>
