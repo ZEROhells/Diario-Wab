@@ -3,32 +3,32 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Anotações</title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <body class="light-theme">
 
-    <div>
+    <div class="navbar_container">
+        <h1>Notas</h1>
+        <h2 id="navData">Data</h2>
         <button class="btn_theme">Dark</button>
     </div>
 
-    <!--exneplo de ID-->>
-    <div id="titleOne">
+    <!--exemplo de ID-->
+    <div id="title">
         <H1>Minhas Anotações</H1>
-        <br>
-        <p id="msg">Funções da pagina:</p>
+        <h2>Funções da pagina:</h2>
         <ul>
             <li class="list">Armazenar informações</li>
-            <li class="list">Guia de funcionalidades das tags</li>
-            <li class="list">Temas Dark e light</li>
+            <li class="list">Guia de funcionalidades e tags</li>
         </ul>
     </div>
     <br>
 
-    <div class="box">
+    <div>
         <H2><span class="bold">Negrito</span>, <span class="italic">Italico</span> e <span
                 class="wanderline">Sublinhado</span></H2>
         <br>
@@ -38,7 +38,7 @@
     </div>
     <br>
 
-    <div class="box">
+    <div>
         <H2>Adereções é funcionalidades</H2>
         <br>
         <p>A quebra de linha é Representada pela tag: <b>(br)</b></p>
@@ -61,7 +61,7 @@
     </div>
     <br>
 
-    <div class="box">
+    <div>
         <H2>Listas</H2>
         <br>
         <p>Para criar uma lista <b>Ordenada</b> usamos duas tag, <b>(OL)</b> ou <b>(uL)</b> que abre e fecha o tipo de
@@ -104,50 +104,34 @@
     </div>
     <br>
 
-    <div class="box">
+    <div>
         <H2>Imagens</H2>
         <br>
 
         <p>A tag utilizada prar inserir imagens é a <b>img</b> com ela podemos atribuir qualquer formato de imagem
-            atraves do atributo <b>SRC</b> informando o caminho da imagem. Exemplo: <b>Cimg
-                src="img/nome_da_imagem.pnj">C/img>.</b>Com o css usamos o id mais o float e podemos alterar a posição da imagens.
+            atraves do atributo <b>SRC</b>, informando o caminho da imagem em seu documento. Exemplo: <b>
+                < img src="../img/nome_da_imagem.pnj">.
+            </b>Com o css usamos a classe ou o id para atribuir o valor do float e podemos alterar a posição
+            da imagens.
             Exemplo:</p>
         <br>
 
-        <div id="imgTop">
-            <img class="img_align_test" src="img/circulo.png">
+        <div class="img_container_aling">
+            <p class="img_align_Left"><img src="../img/circulo.png">Esquerda</p>
+            <p class="img_align_center"><img src="../img/circulo.png">Centro</p>
+            <p class="img_align_right"><img src="../img/circulo.png">Direita</p>
         </div>
-        <p>Alinhamento ao topo:</p>
-        <br>
-
-        <p>Alinhamento ao Botton:</p>
-        <div id="imgBotton">
-            <img class="img_align_test" src="img/circulo.png">
-        </div>
-        <br>
-
-        <div id="imgLeft">
-            <img class="img_align_test" src="img/circulo.png">
-        </div>
-        <p>Alinhamento ao Left:</p>
-        <br>
-
-        <div id="imgRight">
-            <img class="img_align_test" src="img/circulo.png">
-        </div>
-        <p>Alinhamento ao right:</p>
-        <br>
     </div>
     <br>
 
-    <div class="box">
+    <div>
         <H2>Links</H2>
         <br>
         <p>Para Utilizar links usase a tag a tag <b>(a)</b>de ãncora. Exemplo: <b>ca href="url">Texto descritivoc/a></b>
         </p>
         <br>
         <p>Posso deixar como exemplo <a href="https://www.instagram.com/vinicius_zero_/" target="_blank">Meu instagran
-                ;)</a> ou <a href="Vinicius:viniciusop23@gmail.com">Meu Email ;p</a></p>
+            </a> ou <a href="Vinicius:viniciusop23@gmail.com">Meu Email ;p</a></p>
         <br>
         <p>Tambem é possivel localizar um texto dentro da pagina usando a tag <b>(a).</b> Exemplo:</p>
         <br>
@@ -184,33 +168,34 @@
         <br>
         <p>Para inserir links em imagens combinamos a tag <b>(a)</b> com a tag <b>img</b>, dessa forma: <b>'<'a
                     href="url">'<'img src="img_uri">'<' /a></b>. Exemplo:</p3>
-        <p><a href="https://www.youtube.com/@ZeroOni" target="_blank"><img src="img/retangulo.png" alt="youtube"></a>
+        <p><a href="https://www.youtube.com/@ZeroOni" target="_blank"><img src="../img//retangulo.png"
+                    alt="youtube"></a>
         </p>
         <br>
         <ul>
             <li><a href="https://www.instagram.com/vinicius_zero_/" target="_blank"><img
-                        src="img/circulo.png">Produtos</A><BR>
+                        src="../img/circulo.png">Produtos</A><BR>
             <li><a href="https://www.instagram.com/vinicius_zero_/" target="_blank"><img
-                        src="img/circulo.png">Serviços</A><BR>
+                        src="../img/circulo.png">Serviços</A><BR>
             <li><a href="https://www.instagram.com/vinicius_zero_/" target="_blank"><img
-                        src="img/circulo.png">Contato</A><BR>
+                        src="../img/circulo.png">Contato</A><BR>
         </ul>
         <p>Jogos de Ação:</p>
         <ul>
-            <li><a href="index.html" class="acao">Pacman</a></li>
-            <li><a href="index.html" class="acao">Tetris</a></li>
-            <li><a href="index.html" class="acao">Snake</a></li>
+            <li><a href="../pages/index.html" class="acao">Pacman</a></li>
+            <li><a href="../pages/index.html" class="acao">Tetris</a></li>
+            <li><a href="../pages/index.html" class="acao">Snake</a></li>
         </ul>
         <p>Jogos de Estratégia:</p>
         <ul>
-            <li><a href="index.html" class="estrategia">Xadrez</a></li>
-            <li><a href="index.html" class="estrategia">Dominó</a></li>
-            <li><a href="index.html" class="estrategia">Damas</a></li>
+            <li><a href="../pages/index.html" class="estrategia">Xadrez</a></li>
+            <li><a href="../pages/index.html" class="estrategia">Dominó</a></li>
+            <li><a href="../pages/index.html" class="estrategia">Damas</a></li>
         </ul>
     </div>
     <br>
 
-    <div class="box">
+    <div>
         <H2>Tabelas</H2>
         <br>
         <p>A tag utilizada para criar tabelas é a <b>table</b>, dentro dela e necessario usar a tag <b>td</b> para
@@ -235,52 +220,53 @@
     </div>
     <br>
 
-    <div class="box">
+    <div>
         <H2>Codigos comentados</H2>
         <br>
-        <p>Para comentar uma anotação dentro do codigo basta usar a tag <b>(c!-- -->)</b></p>
+        <p>Para anotar dentro do codigo html basta usar a tag <b>(< !-- -->)</b></p>
+        <p>Para anotar dentro do codigo CSS basta usar a tag <b>(/* */)</b></p>
+        <p>Para anotar dentro do codigo JavaScript basta usar a tag <b>(// ou /* */)</b></p>
         <br>
     </div>
     <br>
 
-    <div class="box">
+    <div>
         <H2>Formulários</H2>
         <br>
         <p>Formularios simples utilizando a tag <b>input</b> em seu atributo <b>type=""</b> informamos o tipo de de
-            valor de entra, no <b>name=""</b> expecificamos o nome da variavel que vai armazenar esse dado, em
+            valor (numero ou letra), no <b>name=""</b> expecificamos o nome da variavel que vai armazenar esse dado, em
             <b>size=""</b> especificamos o tamanho do campo em numeros de caractere, por fim <b>maxlenght=""</b> que
-            representa o numero maximo de caracteres digirados pelo usuario. Exemplo:</p>
+            representa o numero maximo de caracteres digirados pelo usuario. Exemplo:
+        </p>
         <form ACTION="email@email.com" METHOD="get">
-            <ul type="none">
-                <li>Nome: <input type="text" placeholder="Ex: ana" name="name"></li> <br>
-                <li>Email: <input type="email" placeholder="Ex: ana@gmail.com" name="email"></li>
-                <li>Nº do cartão de crédito: <input type="caracteres" placeholder="Ex: 5555 5225 2555 3535"
-                        name="card_number"></li>
-                <li>Senha: <input type="password" placeholder="Ex: 123456" name="password"></li>
-                <li>Selecione a bandeira do cartão de crédito: <br>
-                    <input type="radio" checked="" name="selecao_cartao">--------VISA--------<br>
-                    <input type="radio" checked="" name="selecao_cartao">-MASTERCARD-
-                </li>
-                <li>Estado: <input type="text" placeholder="Ex: Rj" name="city"></li>
-                <li>Endereço: <input type="text" placeholder="Ex: Nova Iguaçu, rua HL, 696" name="Endereco"></li>
-                <li>Referência: <br><textarea rows="4" cols="40" placeholder="Ex: Centro" name="reference"></textarea>
-                <li>Selecione o melhor horario para entrega: <br>
-                    <input type="checkbox" name="time_send_1">08h ás 12h<br>
-                    <input type="checkbox" name="time_send_2">13h ás 15h<br>
-                    <input type="checkbox" name="time_send_3">16h ás 18h
-                </li>
-                <li>
-                    <input type="submit" value="Enviar" name="send">
-                    <input type="reset" value="Limpar campos" name="reset">
-                </li>
-                <input type=hidden name="cpf" value="verdadeiro">
-                <!--não sei a finalidade de um input "hidden", ~~anotação~~-->
-            </ul>
+            
+            <p>Nome: <input type="text" placeholder="Ex: ana" name="name"> <br></p>
+            <p>Email: <input type="email" placeholder="Ex: ana@gmail.com" name="email"></p>
+            <p>Senha: <input type="password" placeholder="Ex: 123456" name="password"></p>
+            <p>Nº do cartão de crédito: <input type="caracteres" placeholder="Ex: 5555 5225 2555 3535"
+                    name="card_number"></p>
+
+            <p>Selecione a bandeira do cartão de crédito: </p>
+            <p><input type="radio" checked="" name="selecao_cartao">--------VISA--------</p>
+            <p><input type="radio" checked="" name="selecao_cartao">-MASTERCARD-</p>
+
+            <p>Estado: <input type="text" placeholder="Ex: Rj" name="city"></p>
+            <p>Endereço: <input type="text" placeholder="Ex: Nova Iguaçu, rua HL, 696" name="Endereco"></p>
+            <p>Referência: <br><textarea rows="4" cols="40" placeholder="Ex: Centro" name="reference"></textarea></p>
+
+            <p>Selecione o melhor perido para entrega: </p>
+            <p><input type="checkbox" name="time_send_1">Manha</p>
+            <p><input type="checkbox" name="time_send_2">Tarde</p>
+            <p><input type="checkbox" name="time_send_3">Noite</p>
+
+            <p><input type="submit" value="Enviar" name="send"></p>
+            <p><input type="reset" value="Limpar campos" name="reset"></p>
         </form>
         <br>
-        <h3>Listas de opições</h3>
+        <h3>Opições</h3>
         <p>Listas de opições são bem comuns em formularios, para criar uma lista em uma caixa ou em um meno usamos a tag
-            <b>select</b> Exemplo: </p>
+            <b>select</b> Exemplo:
+        </p>
         <!--Modelo base: <select multiple name="nome da lista">
         <select multiple name="nome da lista"> -->
         <form>
@@ -306,30 +292,24 @@
                 </li>
             </ul>
         </form>
+
+        <h3>Calculadora</h3>
+
+        <p><input type="number" name="txtn1" id="txtn1"></p>
+        <p>+</p>
+        <p><input type="number" name="txtn2" id="txtn2"></p>
+        <p><input type="button" value="Somar" onclick="calc_soma()"></p>
+        <h2 id="res"></h2>
+
+        <h3>Switch</h3>
+
+        <p>Qual dia da semana é hoje?</p>
+        <input id="txtData" type="text" name="data" placeholder="Ex: Terça">
+        <h2 id="resData"></h2>
     </div>
     <br>
 
-    <div class="box">
-        <H2>Frames (depreciada)</H2>
-        <br>
-        <p>Para criação de frames usa se a tag <b>frameset</b>, ele é utilizado como a tag <b>body</b> em questão de
-            preenchimento, pode ser definido seu tamanho a partir dos atributos <b>cols e rows</b> que representam a
-            largura e a autura do frame. Exemplo: <b>cframe cols="25%", *,25%"></frame></b> (o * representa o tamanho
-            que falta para completar a tela, no caso 50%)</p>
-        <!--depreciada
-    <frameset cols="25%.*,25%"> 
-        <frame src="frames/frame_a.html">
-        <frame src="frames/frame_b.htlm">
-        <frame src="frames/frame_c.htlm">
-    </frameset>
-        -->
-        <p>Os atributos da tag <b>frame</b> são <b>src="url", marginwidth="margin largura", marginheight="margin
-                altura", scrolling="add uma barra de rolagen ao frame" e noresize="inpede que o user redirecione o
-                frame"</b> </p>
-    </div>
-    <br>
-
-    <div class="box">
+    <div>
         <H2>Palavra Chave (Meta)</H2>
         <br>
         <p>As palavras chaves não sao exibitas para o usuario final, elas descrevem as definições da pagina e ajudam na
@@ -355,15 +335,6 @@
         </ol>
     </div>
     <br>
-    <!--
-    <br>
-    <hr>
-    <H2>Titulo</H2>
-    <br>
-    <p>texto</p>
-    <br> 
-    -->
-
 
     <script src="../sources/main.js"></script>
     <noscript>JavaScript desativado! Ele é necessario para a visualização completa do site.</noscript>
